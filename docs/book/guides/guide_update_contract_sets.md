@@ -14,7 +14,11 @@ Update shared contract sets and maintain mapping consistency.
 
 1. Edit `/specs/07_runner_behavior/contract_sets/shared/**`.
 2. Keep references consistent with `/specs/07_runner_behavior/impl/shared/**`.
-3. Run `./scripts/runner_bin.sh verify`.
+3. Run `dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check`.
 
 ## Common failure signals
 

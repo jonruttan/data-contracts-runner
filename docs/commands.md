@@ -19,7 +19,11 @@ spec_runner_cli --help
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 Success output:
@@ -52,7 +56,11 @@ spec_runner_cli project scaffold \
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 Success output artifacts:
@@ -82,7 +90,7 @@ spec_runner_cli governance
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh governance
+dc-runner governance run
 ```
 
 Success output:
@@ -107,7 +115,7 @@ spec_runner_cli critical-gate
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh critical-gate
+dc-runner governance critical
 ```
 
 Success output:
@@ -131,7 +139,7 @@ spec_runner_cli docs-generate-check
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh docs-generate-check
+dc-runner docs generate-check
 ```
 
 Success output:

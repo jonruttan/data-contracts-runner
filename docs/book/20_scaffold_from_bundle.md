@@ -41,7 +41,11 @@ spec_runner_cli docs-generate-check
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 ## Common failure signals

@@ -14,7 +14,7 @@ Update shared contract files and re-run governance checks.
 
 1. Edit shared contract docs under `/specs/07_runner_behavior/runner/**`.
 2. Align contract chapter references under `/specs/02_contracts/**`.
-3. Run `./scripts/runner_bin.sh governance`.
+3. Run `dc-runner governance run`.
 
 ## Common failure signals
 

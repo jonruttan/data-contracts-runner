@@ -87,7 +87,7 @@ for name, text in [("README.md", readme_text), ("docs/commands.md", commands_tex
     if "spec_runner_cli" not in text:
         print(f"ERROR: {name} must include canonical runner CLI examples", file=sys.stderr)
         sys.exit(1)
-    if "./scripts/runner_bin.sh" not in text:
+    if "dc-runner" not in text:
         print(f"ERROR: {name} must include repo wrapper equivalents", file=sys.stderr)
         sys.exit(1)
 

@@ -12,7 +12,11 @@ Run full checks and confirm cross-repo references.
 
 ## Step-by-step
 
-1. Run `./scripts/runner_bin.sh verify`.
+1. Run `dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check`.
 2. Validate docs manifest/index sync.
 3. Validate boundary rules.
 

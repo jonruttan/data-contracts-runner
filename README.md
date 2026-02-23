@@ -24,7 +24,11 @@ spec_runner_cli --help
 Repo wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 ### 2) Scaffold from canonical bundle host
@@ -41,7 +45,11 @@ spec_runner_cli project scaffold \
 Wrapper equivalent (if your wrapper exposes scaffold):
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 ### 3) Verify a project
@@ -57,9 +65,9 @@ spec_runner_cli docs-generate-check
 Repo wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh governance
-./scripts/runner_bin.sh critical-gate
-./scripts/runner_bin.sh docs-generate-check
+dc-runner governance run
+dc-runner governance critical
+dc-runner docs generate-check
 ```
 
 ## Expected outputs

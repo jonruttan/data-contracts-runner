@@ -23,7 +23,11 @@ spec_runner_cli --help
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh verify
+dc-runner governance run
+
+dc-runner governance critical
+
+dc-runner docs generate-check
 ```
 
 2. Run governance checks.
@@ -37,7 +41,7 @@ spec_runner_cli governance
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh governance
+dc-runner governance run
 ```
 
 3. Run critical and docs checks.
@@ -52,8 +56,8 @@ spec_runner_cli docs-generate-check
 Wrapper equivalent:
 
 ```bash
-./scripts/runner_bin.sh critical-gate
-./scripts/runner_bin.sh docs-generate-check
+dc-runner governance critical
+dc-runner docs generate-check
 ```
 
 ## Common failure signals
