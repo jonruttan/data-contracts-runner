@@ -1,22 +1,25 @@
 # Guide: Release Shared Runner Surface
 
+Maintainer-only.
+
 ## When to read this
 
-Before release tagging.
+Before merge/tag for shared runner contract updates.
 
 ## What you will do
 
-Validate repo and publish changes.
+Run full checks and confirm cross-repo references.
 
 ## Step-by-step
 
 1. Run `./scripts/runner_bin.sh verify`.
-2. Confirm docs manifest/index sync.
-3. Confirm cross-repo references are updated.
+2. Validate docs manifest/index sync.
+3. Validate boundary rules.
 
 ## Common failure signals
 
-- Missing docs chapter path.
+- required chapter missing
+- stale authority token detected
 
 ## Normative refs
 

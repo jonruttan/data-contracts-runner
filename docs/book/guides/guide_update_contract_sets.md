@@ -1,22 +1,25 @@
 # Guide: Update Contract Sets
 
+Maintainer-only.
+
 ## When to read this
 
-When task-set definitions change.
+When shared task-set manifests change.
 
 ## What you will do
 
-Update shared contract-set manifests safely.
+Update shared contract sets and maintain mapping consistency.
 
 ## Step-by-step
 
 1. Edit `/specs/07_runner_behavior/contract_sets/shared/**`.
-2. Keep include paths consistent with `/specs/07_runner_behavior/impl/shared/**`.
-3. Run verify.
+2. Keep references consistent with `/specs/07_runner_behavior/impl/shared/**`.
+3. Run `./scripts/runner_bin.sh verify`.
 
 ## Common failure signals
 
-- Contract-set include path drift.
+- broken include mapping
+- docs reference drift
 
 ## Normative refs
 

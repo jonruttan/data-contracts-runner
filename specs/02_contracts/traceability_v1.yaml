@@ -6,6 +6,12 @@ mappings:
   - policy_id: runner.docs_manifest_index_sync_required
     verifies:
       - /specs/04_governance/cases/core/docs_manifest_index_sync.spec.md
+  - policy_id: runner.docs_user_operation_flow_required
+    verifies:
+      - /specs/04_governance/cases/core/docs_user_flow_enforced.spec.md
+  - policy_id: runner.docs_cli_first_commands_required
+    verifies:
+      - /specs/04_governance/cases/core/docs_cli_first_commands.spec.md
   - policy_id: runner.wrapper_only_scripts_required
     verifies:
       - /specs/04_governance/cases/core/scripts_wrapper_only.spec.md

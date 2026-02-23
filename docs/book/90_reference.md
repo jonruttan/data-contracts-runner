@@ -1,26 +1,17 @@
 # Reference
 
-## When to read this
+Primary operator path:
 
-Read this for direct path references to canonical shared runner surfaces.
+- `/docs/book/10_cli_quickstart.md`
+- `/docs/book/20_scaffold_from_bundle.md`
+- `/docs/book/30_verify_and_gate.md`
+- `/docs/book/40_read_outputs_and_failures.md`
+- `/docs/book/50_bundle_resolution_and_integrity.md`
+- `/docs/book/70_troubleshooting.md`
 
-## What you will do
+Maintainer-only guides:
 
-Locate exact files for shared contracts, policy, governance, and guides.
-
-## Step-by-step
-
-1. Use `/docs/book/reference_index.md` for ordered chapter links.
-2. Use `/specs/index.md` for spec ownership map.
-3. Use `/specs/04_governance/check_sets_v1.yaml` for repo checks.
-
-## Common failure signals
-
-- paths in reference index that do not exist.
-- missing ownership docs for shared vs impl-specific surfaces.
-
-## Normative refs
-
-- `/specs/index.md`
-- `/docs/book/reference_index.md`
-- `/specs/04_governance/check_sets_v1.yaml`
+- `/docs/book/guides/guide_update_shared_contracts.md`
+- `/docs/book/guides/guide_update_contract_sets.md`
+- `/docs/book/guides/guide_release_shared_runner_surface.md`
+- `/docs/book/guides/guide_boundary_rules.md`

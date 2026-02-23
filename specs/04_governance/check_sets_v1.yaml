@@ -8,6 +8,12 @@ profiles:
       - id: runner.docs_manifest_index_sync
         kind: shell
         command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_user_flow_enforced
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_cli_first_commands
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
   critical-gate:
     checks:
       - id: runner.shared_boundary_enforced
@@ -16,8 +22,20 @@ profiles:
       - id: runner.docs_manifest_index_sync
         kind: shell
         command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_user_flow_enforced
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_cli_first_commands
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
   docs-generate-check:
     checks:
       - id: runner.docs_manifest_index_sync
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_user_flow_enforced
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+      - id: runner.docs_cli_first_commands
         kind: shell
         command: ./scripts/docs_generate_check.sh

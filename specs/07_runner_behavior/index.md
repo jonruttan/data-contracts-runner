@@ -7,3 +7,7 @@ Shared runner behavior authoritative surfaces:
 - `/specs/07_runner_behavior/impl/shared/**`
 
 Implementation-specific behavior is authoritative in implementation repositories only.
+
+User-operation documentation entrypoint:
+
+- `/docs/book/10_cli_quickstart.md`

@@ -2,25 +2,42 @@
 
 ## When to read this
 
-Read this when shared runner checks fail.
+Read this when any core runner operation fails.
 
 ## What you will do
 
-Map error output to root cause and corrective action.
+- isolate whether failure is command, docs-flow, boundary, or bundle integrity
+- apply corrective fix
+- rerun the same command
 
 ## Step-by-step
 
-1. Run `./scripts/runner_bin.sh governance` and capture first failing message.
-2. For docs drift errors, compare `/docs/book/reference_manifest.yaml` vs `/docs/book/reference_index.md`.
-3. For boundary errors, scan for impl-specific paths under `/specs/07_runner_behavior/impl/`.
-4. Re-run `./scripts/runner_bin.sh verify`.
+1. Re-run failing command and capture stderr.
+2. If command usage fails, run:
+
+```bash
+spec_runner_cli --help
+```
+
+3. If docs checks fail, run:
+
+```bash
+./scripts/docs_generate_check.sh
+```
+
+4. If boundary checks fail, run:
+
+```bash
+./scripts/spec_boundary_check.sh
+```
 
 ## Common failure signals
 
-- Missing manifest chapter file on disk.
-- impl-specific path found in shared runner authority.
+- `ERROR: reference index order/content drift from reference manifest`
+- `ERROR: required docs user chapter is missing`
+- `ERROR: stale shared runner authority tokens detected`
 
 ## Normative refs
 
-- `/scripts/spec_boundary_check.sh`
-- `/scripts/docs_generate_check.sh`
+- `/docs/commands.md`
+- `/specs/04_governance/check_sets_v1.yaml`

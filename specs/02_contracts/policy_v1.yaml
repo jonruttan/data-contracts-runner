@@ -9,6 +9,20 @@ rules:
     applies_to:
       - /docs/book/reference_manifest.yaml
       - /docs/book/reference_index.md
+  - id: runner.docs_user_operation_flow_required
+    requirement: docs_book_must_start_with_cli_scaffold_verify_user_flow
+    applies_to:
+      - /docs/book/index.md
+      - /docs/book/10_cli_quickstart.md
+      - /docs/book/20_scaffold_from_bundle.md
+      - /docs/book/30_verify_and_gate.md
+      - /docs/book/40_read_outputs_and_failures.md
+      - /docs/book/50_bundle_resolution_and_integrity.md
+  - id: runner.docs_cli_first_commands_required
+    requirement: command_docs_must_use_runner_cli_first_and_wrapper_second
+    applies_to:
+      - /README.md
+      - /docs/commands.md
   - id: runner.wrapper_only_scripts_required
     requirement: scripts_must_delegate_checks_not_embed_business_logic
     applies_to:
