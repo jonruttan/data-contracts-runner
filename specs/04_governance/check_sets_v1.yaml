@@ -1,0 +1,23 @@
+version: 1
+profiles:
+  governance:
+    checks:
+      - id: runner.shared_boundary_enforced
+        kind: shell
+        command: ./scripts/spec_boundary_check.sh
+      - id: runner.docs_manifest_index_sync
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+  critical-gate:
+    checks:
+      - id: runner.shared_boundary_enforced
+        kind: shell
+        command: ./scripts/spec_boundary_check.sh
+      - id: runner.docs_manifest_index_sync
+        kind: shell
+        command: ./scripts/docs_generate_check.sh
+  docs-generate-check:
+    checks:
+      - id: runner.docs_manifest_index_sync
+        kind: shell
+        command: ./scripts/docs_generate_check.sh

@@ -1,0 +1,5 @@
+version: 1
+prefix_map:
+  DCRUN-GOV-001: runner.shared_boundary_enforced
+  DCRUN-GOV-002: runner.docs_manifest_index_sync
+  DCRUN-GOV-003: runner.wrapper_only_scripts

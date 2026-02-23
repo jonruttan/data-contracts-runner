@@ -1,0 +1,15 @@
+version: 1
+rules:
+  - id: runner.shared_boundary_enforced
+    requirement: shared_surfaces_must_not_include_impl_specific_paths
+    applies_to:
+      - /specs/07_runner_behavior/**
+  - id: runner.docs_manifest_index_sync_required
+    requirement: docs_book_reference_manifest_and_index_must_match
+    applies_to:
+      - /docs/book/reference_manifest.yaml
+      - /docs/book/reference_index.md
+  - id: runner.wrapper_only_scripts_required
+    requirement: scripts_must_delegate_checks_not_embed_business_logic
+    applies_to:
+      - /scripts/**

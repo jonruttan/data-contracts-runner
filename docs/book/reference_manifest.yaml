@@ -1,0 +1,18 @@
+version: 1
+chapters:
+  - path: /docs/book/10_getting_started.md
+    title: Getting Started
+  - path: /docs/book/20_runner_model.md
+    title: Runner Model
+  - path: /docs/book/30_shared_runner_contracts.md
+    title: Shared Runner Contracts
+  - path: /docs/book/40_contract_sets_and_profiles.md
+    title: Contract Sets and Profiles
+  - path: /docs/book/50_bundle_consumption.md
+    title: Bundle Consumption
+  - path: /docs/book/60_ci_and_release.md
+    title: CI and Release
+  - path: /docs/book/70_troubleshooting.md
+    title: Troubleshooting
+  - path: /docs/book/90_reference.md
+    title: Reference
