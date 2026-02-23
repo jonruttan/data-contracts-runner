@@ -1,0 +1,14 @@
+version: 1
+bundle_dependencies:
+  - bundle_id: data-contracts-library-core
+    bundle_version: 1.0.0
+    role: required
+  - bundle_id: data-contracts-runner-shared-behavior
+    bundle_version: 1.0.0
+    role: required
+  - bundle_id: data-contracts-library-overlays
+    bundle_version: 1.0.0
+    role: required
+notes:
+  - runner consumers must pin these bundle versions in lock/manifests.
+  - shared library policy imports are sourced from data-contracts-library bundle payloads.

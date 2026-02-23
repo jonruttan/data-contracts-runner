@@ -1,0 +1,9 @@
+contract_set_id: shared_makefile_help_contract_set
+version: 1
+depends_on: []
+dependency_mode: required
+include_paths:
+  - specs/07_runner_behavior/impl/shared/makefile_help_output_v1.md
+applies_to_runners:
+  - python
+  - php

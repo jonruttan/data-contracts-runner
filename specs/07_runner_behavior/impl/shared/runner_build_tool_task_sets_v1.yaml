@@ -1,0 +1,28 @@
+version: 1
+required_tasks:
+  - task_id: build
+    norm: MUST
+  - task_id: test
+    norm: MUST
+  - task_id: verify
+    norm: MUST
+  - task_id: spec-sync
+    norm: MUST
+  - task_id: spec-sync-check
+    norm: MUST
+  - task_id: compat-check
+    norm: MUST
+optional_tasks:
+  - task_id: smoke
+    norm: MAY
+  - task_id: package-check
+    norm: MAY
+  - task_id: release-verify
+    norm: MAY
+  - task_id: docs-check
+    norm: MAY
+  - task_id: lint
+    norm: MAY
+  - task_id: typecheck
+    norm: MAY
+bundle_dependencies_ref: /specs/07_runner_behavior/impl/shared/library_bundle_dependencies_v1.yaml

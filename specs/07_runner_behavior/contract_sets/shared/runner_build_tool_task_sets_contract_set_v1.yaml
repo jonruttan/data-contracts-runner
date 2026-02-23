@@ -1,0 +1,10 @@
+contract_set_id: shared_runner_build_tool_task_sets_contract_set
+version: 1
+depends_on: []
+dependency_mode: required
+include_paths:
+  - specs/07_runner_behavior/impl/shared/runner_build_tool_task_sets_v1.yaml
+applies_to_runners:
+  - python
+  - php
+  - rust
